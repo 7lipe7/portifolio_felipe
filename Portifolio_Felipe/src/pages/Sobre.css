@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sobre-section {
+    background-color: rgba(0, 0, 0, 0.895);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+.container {
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2px;
+    flex: 1;
+    color: white;
+}
+
+
+
+
+.img {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+img {
+    width: 340px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.btn-contact{
+display: flex;
+justify-content: center;
+gap:15px;
+padding: 10px;
+
+
+}
+.btn-contact button {
+   background: linear-gradient(135deg, orange, rgb(255, 225, 0));
+   border: none;
+   padding: 15px;
+   border-radius: 15px;
+}
+button:hover{
+    cursor: pointer;
+ background: linear-gradient(135deg, orange, rgb(255, 225, 0));
+  transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgb(255,255,0);
+    transition: 0.3s;
+}
