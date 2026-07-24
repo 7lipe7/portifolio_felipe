@@ -1,15 +1,18 @@
 import React from 'react'
 import './Sobre.css'
 import perfil from '../assets/pessoal.jpg'
+import gitHub from '../assets/icons8-github-96.png'
+import linkdin from '../assets/icons8-linkedin-96.png'
+
 
 const Sobre = () => {
   return (
     <div className="sobre-section">
 
       <div className="container">
-       
-        <p><span style={{color:'orange',fontSize:'5rem'}}>.</span> disponível para contato</p>
-        
+
+        <p><span style={{ color: 'orange', fontSize: '5rem' }}>.</span> disponível para contato</p>
+
 
         <h1>
           Felipe{" "}
@@ -32,18 +35,35 @@ const Sobre = () => {
           Estudante de Desenvolvimento de Software Multiplataforma, com foco em
           desenvolvimento web e aplicações modernas.
         </h4>
-     <div className="btn-contact">
-           <button>ver projetos</button>
-            <button>entar em contato</button>
-       </div>
-       <div className="style">
-        
-       </div>
+        <div className="btn-contact">
+          <button>ver projetos</button>
+          <button>entrar em contato</button>
+        </div>
+        <hr />
+        <div className="info">
+          <div className="box">
+            <p>LinkedIn</p>
+            <button  className='contact'>
+              <img src={linkdin} style={{ width: '30px' }} alt="LinkedIn" />
+            </button>
+
+          </div>
+          <div className="box">
+            <p>github</p>
+            <button className='contact'>
+              <img src={gitHub} style={{ width: '30px' }} alt="github" />
+            </button >
+          </div>
+
+        </div>
+   
       </div>
-       
+
       <div className="img">
         <img src={perfil} alt="Foto de perfil de Felipe Santana Lopes" />
       </div>
+
+
 
     </div>
   )

@@ -1,7 +1,9 @@
 
 import './App.css'
+import Info from './pages/Info.jsx'
 import Nav from './pages/Nav.jsx'
 import Sobre from './pages/Sobre.jsx'
+
 
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
     <div className="app">
       <Nav />
       <Sobre/>
+      <Info/>
     </div>
   )
 }
