@@ -98,6 +98,14 @@ body{
 .fig{
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+.contact-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+   margin-top: 57px;
 }
 
 
