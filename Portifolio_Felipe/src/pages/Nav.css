@@ -107,3 +107,33 @@ nav {
         font-family: cursive;
     }
 }
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.6rem 0.6rem;
+    }
+
+    .top h2 {
+        font-size: 1rem;
+    }
+
+    .btn-info {
+        gap: 0.3rem;
+    }
+
+    .btn-info button {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+    }
+
+    #Cv-download {
+        font-size: 0.7rem;
+        padding: 0.3rem 1rem;
+    }
+
+    #Cv-download img {
+        width: 14px !important;
+        height: 14px !important;
+    }
+}

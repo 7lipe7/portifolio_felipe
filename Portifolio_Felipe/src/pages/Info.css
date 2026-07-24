@@ -1,23 +1,18 @@
 body{
     background-color:rgba(0, 0, 0, 0.847);
-    
 }
 
 .info {
   padding: 60px 0;
-  height: 100vh;
+  min-height: auto;
   border: 1px solid rgba(255, 255, 255, 0.397);
-  
 }
 
 .containerr {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    border: 1;
-  
 }
-
 
 .section-title {
     text-align: start;
@@ -30,12 +25,10 @@ body{
     text-transform: uppercase;
 }
 
-
 .content-wrapper {
     display: flex;
     gap: 40px;
     align-items: flex-start;
-    
 }
 
 .apresent {
@@ -64,6 +57,10 @@ body{
     color: #ffffff;
     margin-bottom: 20px;
     font-weight: 600;
+  
+}
+.apresent h2{
+padding: 15px;
 }
 
 .text p {
@@ -72,12 +69,14 @@ body{
     color: #ccc;
     font-size: 1rem;
 }
+
+
 .btn-tec {
   margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(4, 2fr);
   gap: 15px;
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 .box-btn button {
@@ -95,17 +94,19 @@ body{
   background: orange;
   color: #000;
 }
-.fig{
+
+.fig {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.contact-card{
+
+.contact-card {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-   margin-top: 57px;
+    margin-top: 57px;
 }
 
 
@@ -121,5 +122,70 @@ body{
 
     .text h2 {
         font-size: 1.5rem;
+    }
+
+    .btn-tec {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+
+    .info {
+        padding: 40px 0;
+    }
+}
+
+/* ======= RESPONSIVO - MOBILE PEQUENO ======= */
+@media (max-width: 480px) {
+    .info {
+        padding: 30px 0;
+    }
+
+    .containerr {
+        padding: 0 12px;
+    }
+
+    .section-title {
+        margin-left: 4px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .content-wrapper {
+        gap: 24px;
+    }
+
+    .apresent h2 {
+        font-size: 1.4rem;
+    }
+
+    .text h2 {
+        font-size: 1.2rem;
+        margin-bottom: 14px;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .btn-tec {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .box-btn button {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .fig img {
+        width: 40px !important;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 30px;
     }
 }

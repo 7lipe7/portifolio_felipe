@@ -9,6 +9,7 @@ import py from '../assets/icons8-python-96.png'
 import prisma from '../assets/icons8-prisma-orma-96.png'
 import java from '../assets/icons8-logo-java-coffee-cup-96.png'
 import js from '../assets/icons8-javascript-96.png'
+import git from '../assets/icons8-git-96.png'
 
 
 const Info = () => {
@@ -92,17 +93,13 @@ const Info = () => {
                   <img src={java} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
-
-
-
-
+              <div className="box-btn">
+                <div className="fig">
+                  <button>git</button>
+                  <img src={git} style={{ width: '50px', margin: '0 auto' }} alt="" />
+                </div>
+              </div>
             </div>
-
-          
-
-             
-         
-
           </div>
 
 

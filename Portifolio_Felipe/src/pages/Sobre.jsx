@@ -5,13 +5,14 @@ import gitHub from '../assets/icons8-github-96.png'
 import linkdin from '../assets/icons8-linkedin-96.png'
 
 
+
 const Sobre = () => {
   return (
     <div className="sobre-section">
 
       <div className="container">
 
-        <p><span style={{ color: 'orange', fontSize: '5rem' }}>.</span> disponível para contato</p>
+        <p><span className="highlight-dot">.</span> disponível para contato</p>
 
 
         <h1>
@@ -40,27 +41,30 @@ const Sobre = () => {
           <button>entrar em contato</button>
         </div>
         <hr />
-        <div className="info">
+        <div className="social-info">
           <div className="box">
             <p>LinkedIn</p>
-            <button  className='contact'>
-              <img src={linkdin} style={{ width: '30px' }} alt="LinkedIn" />
+            <button className='contact'>
+              <img src={linkdin} alt="LinkedIn" />
             </button>
 
           </div>
           <div className="box">
             <p>github</p>
             <button className='contact'>
-              <img src={gitHub} style={{ width: '30px' }} alt="github" />
+              <img src={gitHub} alt="github" />
             </button >
           </div>
+        
+
+          
 
         </div>
    
       </div>
 
       <div className="img">
-        <img src={perfil} alt="Foto de perfil de Felipe Santana Lopes" />
+        <img className="perfil-img" src={perfil} alt="Foto de perfil de Felipe Santana Lopes" />
       </div>
 
 
