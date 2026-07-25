@@ -4,6 +4,10 @@ import Info from './pages/Info.jsx'
 import Nav from './pages/Nav.jsx'
 import Sobre from './pages/Sobre.jsx'
 
+import Project from './pages/Project';
+
+
+
 
 
 function App() {
@@ -12,6 +16,7 @@ function App() {
       <Nav />
       <Sobre/>
       <Info/>
+      <Project/>
     </div>
   )
 }

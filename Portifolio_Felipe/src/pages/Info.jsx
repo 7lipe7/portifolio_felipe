@@ -1,5 +1,5 @@
 import React from 'react'
-import './Info.css'
+import './style/Info.css'
 import react from '../assets/icons8-reagir-96.png'
 import php from '../assets/icons8-logo-php-96.png'
 import mySql from '../assets/icons8-meu-sql-96.png'
@@ -10,6 +10,8 @@ import prisma from '../assets/icons8-prisma-orma-96.png'
 import java from '../assets/icons8-logo-java-coffee-cup-96.png'
 import js from '../assets/icons8-javascript-96.png'
 import git from '../assets/icons8-git-96.png'
+
+
 
 
 const Info = () => {
@@ -45,7 +47,7 @@ const Info = () => {
               </div>
               <div className="box-btn">
                 <div className="fig">
-                  <button>sql</button>
+                  <button>mysql</button>
                   <img src={mySql} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
 
@@ -135,6 +137,7 @@ const Info = () => {
         </div>
 
       </div>
+      
     </section>
   )
 }

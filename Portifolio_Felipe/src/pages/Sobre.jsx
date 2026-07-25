@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sobre.css'
+import './style/Sobre.css'
 import perfil from '../assets/pessoal.jpg'
 import gitHub from '../assets/icons8-github-96.png'
 import linkdin from '../assets/icons8-linkedin-96.png'

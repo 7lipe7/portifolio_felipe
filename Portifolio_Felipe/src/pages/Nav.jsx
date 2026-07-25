@@ -1,5 +1,5 @@
 import React from 'react'
-import './Nav.css'
+import './style/Nav.css'
 
 import imgDowload from '../assets/icons8-baixar-32.png'
 const Nav = () => {
