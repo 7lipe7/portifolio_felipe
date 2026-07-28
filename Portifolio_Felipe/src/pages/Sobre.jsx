@@ -4,11 +4,17 @@ import perfil from '../assets/pessoal.jpg'
 import gitHub from '../assets/icons8-github-96.png'
 import linkdin from '../assets/icons8-linkedin-96.png'
 
-
+const scrollToSection = (id) => {
+  const element = document.getElementById(id)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 
 const Sobre = () => {
   return (
-    <div className="sobre-section">
+    <div className="sobre-section" id="sobre">
+      
 
       <div className="container">
 
@@ -37,28 +43,27 @@ const Sobre = () => {
           desenvolvimento web e aplicações modernas.
         </h4>
         <div className="btn-contact">
-          <button>ver projetos</button>
-          <button>entrar em contato</button>
+          <button onClick={() => scrollToSection('projetos')}>ver projetos</button>
+          <button onClick={() => scrollToSection('contato')}>entrar em contato</button>
         </div>
         <hr />
         <div className="social-info">
           <div className="box">
             <p>LinkedIn</p>
-            <button className='contact'>
-              <img src={linkdin} alt="LinkedIn" />
-            </button>
-
+            <a href="https://www.linkedin.com/in/felipe-santana-lopes-76ba77244/" target="_blank" rel="noopener noreferrer">
+              <button className='contact'>
+                <img src={linkdin} alt="LinkedIn" />
+              </button>
+            </a>
           </div>
           <div className="box">
             <p>github</p>
-            <button className='contact'>
-              <img src={gitHub} alt="github" />
-            </button >
+            <a href="https://github.com/7lipe7" target="_blank" rel="noopener noreferrer">
+              <button className='contact'>
+                <img src={gitHub} alt="github" />
+              </button>
+            </a>
           </div>
-        
-
-          
-
         </div>
    
       </div>

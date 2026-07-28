@@ -1,14 +1,7 @@
-import { useEffect, useState } from "react";
 import "./style/Project.css";
 
-const FILTER_REPOS = [
 
-  "dindin",
-  "form_multstep",
-  "calc_imc"
-];
-
-const STATIC_PROJECTS = [
+const PROJECTS = [
   {
     name: "lariamigurumi",
     description: "Aplicação desenvolvida para apresentar produtos artesanais no estilo amigurumi, com foco em um design visual atrativo e navegação simples. O projeto destaca habilidades em criação de interfaces modernas e organização de conteúdo para pequenos negócios.- Lari Amigurumi",
@@ -21,36 +14,38 @@ const STATIC_PROJECTS = [
     language: "HTML/CSS/JS",
     html_url: "https://7lipe7.github.io/renata_bordados/"
   },
-
-];
+  {
+    name:"calc_imc",
+    description: "Calculadora de IMC (Índice de Massa Corporal) desenvolvida com HTML, CSS e JavaScript. Permite aos usuários calcular seu IMC com base em altura e peso, fornecendo uma avaliação rápida da saúde corporal.",
+    language: "react/html/css/js",
+    html_url: "https://calc-imc-gamma-six.vercel.app/"
+  },
+  {
+    name: "form_multstep",
+    description: "Formulário de múltiplas etapas desenvolvido com React, permitindo aos usuários preencher informações em etapas sequenciais. O projeto demonstra habilidades em gerenciamento de estado e navegação entre diferentes seções do formulário.",
+    language: "react/html/css/js",
+    html_url: "https://form-multstep-nd0tn04u1-felipe-556d.vercel.app/"
+  },
+  {
+    name: "dindin",
+    description: "Aplicação web desenvolvida para gerenciamento financeiro pessoal, permitindo aos usuários registrar despesas e receitas, visualizar gráficos de gastos e manter um controle eficiente de suas finanças. O projeto destaca habilidades em desenvolvimento front-end e integração com APIs para armazenamento de dados.",
+    language: "react/html/css/js",
+    html_url: "https://dindin-jkme9pyr5-felipe-556d.vercel.app/"
+  },
+]
+   
 
 function Repos() {
-  const [repos, setRepos] = useState([]);
-
-  useEffect(() => {
-    fetch("https://api.github.com/users/7lipe7/repos")
-      .then((res) => res.json())
-      .then((data) => {
-        const filtered = data.filter((repo) =>
-          FILTER_REPOS.includes(repo.name)
-        );
-        setRepos(filtered);
-      })
-      .catch((err) => console.error(err));
-  }, []);
-
-  const allProjects = [...STATIC_PROJECTS, ...repos];
-
   return (
-    <div className="project-container">
+    <div className="project-container" id="projetos">
       <div className="title">
         <h2>
           Meus <span>Projetos</span>
         </h2>
       </div>
       <div className="repos-grid">
-        {allProjects.map((project, index) => (
-          <div className="repo-card" key={project.id || `static-${index}`}>
+        {PROJECTS.map((project, index) => (
+          <div className="repo-card" key={`project-${index}`}>
             <div className="repo-card-header">
               <h3>{project.name}</h3>
               <span className="repo-language">
@@ -67,7 +62,7 @@ function Repos() {
                 rel="noopener noreferrer"
                 className="repo-link"
               >
-                {project.html_url.includes("github.io") ? "Acessar Site" : "Ver no GitHub"}
+                {project.html_url.includes("github.io") || project.html_url.includes("vercel.app") ? "Acessar Site" : "Ver no GitHub"}
               </a>
             </div>
           </div>

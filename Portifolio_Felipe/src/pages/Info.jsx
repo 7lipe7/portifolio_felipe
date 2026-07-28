@@ -16,7 +16,7 @@ import git from '../assets/icons8-git-96.png'
 
 const Info = () => {
   return (
-    <section className="info">
+    <section className="info" id="habilidades">
       <div className="containerr">
 
         <h4 className="section-title">Sobre mim</h4>
