@@ -31,7 +31,7 @@ const PROJECTS = [
     name: "dindin",
     description: "Aplicação web desenvolvida para gerenciamento financeiro pessoal, permitindo aos usuários registrar despesas e receitas, visualizar gráficos de gastos e manter um controle eficiente de suas finanças. O projeto destaca habilidades em desenvolvimento front-end e integração com APIs para armazenamento de dados.",
     language: "react/html/css/js",
-    html_url: "https://dindin-one.vercel.app/"
+    html_url: "https://dindin-bkhzuhs8w-felipe-556d.vercel.app/"
   },
   {
     name: "pagina de vendas do iphone 13",
