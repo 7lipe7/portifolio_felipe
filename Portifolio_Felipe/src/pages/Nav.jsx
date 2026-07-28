@@ -21,8 +21,8 @@ const Nav = () => {
                     <button onClick={() => scrollToSection('projetos')}>projetos</button>
                     <button onClick={() => scrollToSection('contato')}>contato</button>
                 </div>
-                <a href="/cv-felipe-santana.pdf" download>
-                  <button id='Cv-download'><img src={imgDowload} alt="download" style={{width:'18px',height:'18px', marginRight:'5px'}} /> cv</button>
+                <a href="src/assets/currículo_Felipe.pdf" download>
+                  <button id='Cv-download'><img src={imgDowload} alt="download" style={{width:'18px',height:'18px', marginRight:'5px'}} /> baixar cv</button>
                 </a>
             </div>
         </nav>

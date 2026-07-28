@@ -3,6 +3,7 @@ import "./style/Project.css";
 
 const PROJECTS = [
   {
+
     name: "lariamigurumi",
     description: "Aplicação desenvolvida para apresentar produtos artesanais no estilo amigurumi, com foco em um design visual atrativo e navegação simples. O projeto destaca habilidades em criação de interfaces modernas e organização de conteúdo para pequenos negócios.- Lari Amigurumi",
     language: "HTML/CSS/JS",
@@ -32,6 +33,12 @@ const PROJECTS = [
     language: "react/html/css/js",
     html_url: "https://dindin-jkme9pyr5-felipe-556d.vercel.app/"
   },
+  {
+    name: "pagina de vendas do iphone 13",
+    description: "Página de vendas do iPhone 13 desenvolvida com HTML, CSS e JavaScript. Permite aos usuários explorar os recursos e especificações do dispositivo, além de facilitar o processo de compra.",
+    language: "html/css/js",
+    html_url: "https://7lipe7.github.io/iphone/"
+  }
 ]
    
 

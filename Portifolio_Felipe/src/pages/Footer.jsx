@@ -82,14 +82,8 @@ const Footer = () => {
               >
                 <img src={linkedinIcon} alt="LinkedIn" />
               </a>
-              <a
-                href="mailto:felipesantanalopes7@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="E-mail"
-              >
-                <img src={emailIcon} alt="Email" />
-              </a>
+             
+              
             </div>
           </div>
 
