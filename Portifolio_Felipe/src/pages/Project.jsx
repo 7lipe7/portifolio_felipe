@@ -47,7 +47,7 @@ function Repos() {
     <div className="project-container" id="projetos">
       <div className="title">
         <h2>
-          Meus <span>Projetos</span>
+          Meus <span> Projetos </span>
         </h2>
       </div>
       <div className="repos-grid">
