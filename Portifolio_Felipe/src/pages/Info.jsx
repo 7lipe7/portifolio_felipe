@@ -107,29 +107,16 @@ const Info = () => {
 
           <div className="text">
             <h2>Quem sou eu</h2>
-
             <p>
-              Sou desenvolvedor apaixonado por tecnologia e criação de soluções web modernas.
-              Tenho experiência no desenvolvimento de aplicações utilizando React e TypeScript,
-              criando interfaces dinâmicas, responsivas e com foco na melhor experiência do usuário.
+              Desenvolvedor com experiência na criação de aplicações web completas, desde interfaces modernas em React até APIs robustas com Node.js e PHP.
+            </p>
+            <p>
+              Já desenvolvi projetos com autenticação, integração com APIs e gerenciamento de dados, sempre focando em performance, organização e escalabilidade.
             </p>
 
             <p>
-              No back-end, trabalho com Node.js e PHP, desenvolvendo APIs e sistemas robustos,
-              sempre buscando performance e organização de código. Também possuo conhecimento
-              em bancos de dados como MySQL, garantindo uma boa estrutura e eficiência no armazenamento de dados.
+              Tenho experiência com bancos de dados como MySQL e ferramentas modernas como Prisma e Supabase.
             </p>
-
-            <p>
-              Além disso, utilizo o Figma para prototipação e design de interfaces, o que me permite
-              transformar ideias em projetos bem estruturados antes mesmo da codificação.
-            </p>
-
-            <p>
-              Estou sempre em busca de evolução, aprendendo novas tecnologias e aprimorando minhas
-              habilidades para entregar projetos cada vez melhores.
-            </p>
-
 
 
 
@@ -137,7 +124,7 @@ const Info = () => {
         </div>
 
       </div>
-      
+
     </section>
   )
 }
