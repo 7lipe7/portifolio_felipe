@@ -10,6 +10,7 @@ import prisma from '../assets/icons8-prisma-orma-96.png'
 import java from '../assets/icons8-logo-java-coffee-cup-96.png'
 import js from '../assets/icons8-javascript-96.png'
 import git from '../assets/icons8-git-96.png'
+import postgresql from '../assets/icons8-postgreesql-96.png'
 
 
 
@@ -100,6 +101,13 @@ const Info = () => {
                   <button>git</button>
                   <img src={git} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
+              </div>
+                <div className="box-btn">
+                <div className="fig">
+                  <button>postgresql</button>
+                  <img src={postgresql} style={{ width: '50px', margin: '0 auto' }} alt="" />
+                </div>
+                
               </div>
             </div>
           </div>
