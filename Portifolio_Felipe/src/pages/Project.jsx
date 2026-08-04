@@ -77,7 +77,7 @@ function Repos() {
       </div>
     </div>
   );
-}
+}1
 
 export default Repos;
 
