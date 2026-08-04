@@ -74,7 +74,7 @@ const Sobre = () => {
           <span ref={typedRef}></span>
         </p>
 
-        <h4>
+<h4 className="name-fade-slide delay-1">
           Estudante de Desenvolvimento de Software Multiplataforma, com foco em
           desenvolvimento web e aplicações modernas.
         </h4>
