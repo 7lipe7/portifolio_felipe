@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import Typed from 'typed.js'
 import './style/Sobre.css'
 import perfil from '../assets/pessoal.jpg'
 import gitHub from '../assets/icons8-github-96.png'
@@ -12,16 +13,49 @@ const scrollToSection = (id) => {
 }
 
 const Sobre = () => {
+  const typedRef = useRef(null)
+
+  useEffect(() => {
+    const typed = new Typed(typedRef.current, {
+  strings: [
+  'Desenvolvedor Web & UX Design',
+  'Desenvolvedor Front-end React',
+  'Desenvolvedor Full Stack',
+  'Desenvolvedor JavaScript',
+  'Desenvolvedor TypeScript',
+  'Criando interfaces modernas',
+  'Construindo aplicações web escaláveis',
+  'Apaixonado por tecnologia',
+  'Transformando ideias em soluções digitais',
+  'Estudante de Desenvolvimento de Software',
+  'React | Node.js | PHP',
+  'Explorando novas tecnologias',
+  'Focado em experiências digitais',
+  'Desenvolvendo projetos inovadores',
+],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1500,
+      startDelay: 500,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+    })
+
+    return () => {
+      typed.destroy()
+    }
+  }, [])
   return (
     <div className="sobre-section" id="sobre">
-      
+
 
       <div className="container">
 
         <p><span className="highlight-dot">.</span> disponível para contato</p>
 
 
-        <h1>
+<h1 className="name-fade-slide">
           Felipe{" "}
           <span
             style={{
@@ -36,7 +70,9 @@ const Sobre = () => {
           Lopes
         </h1>
 
-        <p>Desenvolvedor Web & UX Design</p>
+        <p className="typed-title">
+          <span ref={typedRef}></span>
+        </p>
 
         <h4>
           Estudante de Desenvolvimento de Software Multiplataforma, com foco em
@@ -65,7 +101,7 @@ const Sobre = () => {
             </a>
           </div>
         </div>
-   
+
       </div>
 
       <div className="img">

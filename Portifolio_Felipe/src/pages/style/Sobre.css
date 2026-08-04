@@ -22,6 +22,35 @@ body {
   
 }
 
+/* Animação fade + slide no nome */
+.name-fade-slide {
+    animation: fadeSlideIn 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cargo com efeito Typed.js */
+.typed-title {
+    min-height: 1.5em;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.typed-title .typed-cursor {
+    color: orange;
+    font-weight: 600;
+}
+
 .container {
     text-align: center;
     justify-content: center;
