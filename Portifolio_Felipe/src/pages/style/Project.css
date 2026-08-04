@@ -83,6 +83,58 @@
 }
 
 
+/* Galeria de imagens com rolagem lateral */
+.repo-gallery {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+.repo-gallery-track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: orange rgba(255, 165, 0, 0.15);
+}
+
+.repo-gallery-track::-webkit-scrollbar {
+    height: 8px;
+}
+
+.repo-gallery-track::-webkit-scrollbar-track {
+    background: rgba(255, 165, 0, 0.1);
+    border-radius: 10px;
+}
+
+.repo-gallery-track::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, orange, rgb(255, 225, 0));
+    border-radius: 10px;
+}
+
+.repo-gallery-img {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 165, 0, 0.2);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.repo-gallery-img:hover {
+    transform: scale(1.03);
+    border-color: orange;
+}
+
+
 .repo-card-footer {
     margin-top: auto;
     padding-top: 12px;
@@ -121,8 +173,13 @@
         padding: 0;
     }
 
-    .repo-card {
+.repo-card {
         padding: 20px;
+    }
+
+    .repo-gallery-img {
+        max-width: 220px;
+        height: 150px;
     }
 }
 
