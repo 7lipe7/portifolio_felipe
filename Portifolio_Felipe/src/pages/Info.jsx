@@ -31,7 +31,7 @@ const Info = () => {
             </h2>
             <hr />
             <div className="btn-tec">
-<div className="box-btn">
+              <div className="box-btn">
                 <div className="fig">
                   <button type="button">React</button>
                   <img src={react} style={{ width: '50px', margin: '0 auto' }} alt="" />
@@ -42,14 +42,14 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-<button type="button">php</button>
+                  <button type="button">php</button>
                   <img src={php} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
 
               </div>
               <div className="box-btn">
                 <div className="fig">
-<button type="button">mysql</button>
+                  <button type="button">mysql</button>
                   <img src={mySql} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
 
@@ -57,7 +57,7 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-<button type="button">javaScript</button>
+                  <button type="button">javaScript</button>
                   <img src={js} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
 
@@ -65,7 +65,7 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-<button type="button">nodeJS</button>
+                  <button type="button">nodeJS</button>
                   <img src={node} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
@@ -73,7 +73,7 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-<button type="button">c++</button>
+                  <button type="button">c++</button>
                   <img src={c} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
@@ -81,41 +81,41 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-<button type="button">python</button>
+                  <button type="button">python</button>
                   <img src={py} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
               <div className="box-btn">
                 <div className="fig">
-<button type="button">prisma.js</button>
+                  <button type="button">prisma.js</button>
                   <img src={prisma} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
               <div className="box-btn">
                 <div className="fig">
-<button type="button">java</button>
+                  <button type="button">java</button>
                   <img src={java} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
               <div className="box-btn">
                 <div className="fig">
-<button type="button">git</button>
+                  <button type="button">git</button>
                   <img src={git} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
-                <div className="box-btn">
+              <div className="box-btn">
                 <div className="fig">
-<button type="button">postgresql</button>
+                  <button type="button">postgresql</button>
                   <img src={postgresql} style={{ width: '50px', margin: '0 auto' }} alt="" />
-                  
+
                 </div>
-                
+
               </div> <div className="box-btn">
                 <div className="fig">
-<button type="button">docker</button>
+                  <button type="button">docker</button>
                   <img src={docker} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -138,8 +138,8 @@ const Info = () => {
 
           </div>
         </div>
-        
-        
+
+
       </div>
 
     </section>
