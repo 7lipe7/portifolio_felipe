@@ -11,6 +11,7 @@ import java from '../assets/icons8-logo-java-coffee-cup-96.png'
 import js from '../assets/icons8-javascript-96.png'
 import git from '../assets/icons8-git-96.png'
 import postgresql from '../assets/icons8-postgreesql-96.png'
+import docker from '../assets/docker.png'
 
 
 
@@ -106,6 +107,13 @@ const Info = () => {
                 <div className="fig">
                   <button>postgresql</button>
                   <img src={postgresql} style={{ width: '50px', margin: '0 auto' }} alt="" />
+                  
+                </div>
+                
+              </div> <div className="box-btn">
+                <div className="fig">
+                  <button>docker</button>
+                  <img src={docker} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
                 
               </div>
@@ -130,7 +138,8 @@ const Info = () => {
 
           </div>
         </div>
-
+        
+        
       </div>
 
     </section>
