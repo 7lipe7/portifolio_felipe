@@ -31,9 +31,9 @@ const Info = () => {
             </h2>
             <hr />
             <div className="btn-tec">
-              <div className="box-btn">
+<div className="box-btn">
                 <div className="fig">
-                  <button>React</button>
+                  <button type="button">React</button>
                   <img src={react} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
 
@@ -42,14 +42,14 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-                  <button>php</button>
+<button type="button">php</button>
                   <img src={php} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
 
               </div>
               <div className="box-btn">
                 <div className="fig">
-                  <button>mysql</button>
+<button type="button">mysql</button>
                   <img src={mySql} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
 
@@ -57,7 +57,7 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-                  <button>javaScript</button>
+<button type="button">javaScript</button>
                   <img src={js} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
 
@@ -65,7 +65,7 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-                  <button>nodeJS</button>
+<button type="button">nodeJS</button>
                   <img src={node} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
@@ -73,7 +73,7 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-                  <button>c++</button>
+<button type="button">c++</button>
                   <img src={c} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
@@ -81,38 +81,38 @@ const Info = () => {
 
               <div className="box-btn">
                 <div className="fig">
-                  <button>python</button>
+<button type="button">python</button>
                   <img src={py} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
               <div className="box-btn">
                 <div className="fig">
-                  <button>prisma.js</button>
+<button type="button">prisma.js</button>
                   <img src={prisma} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
               <div className="box-btn">
                 <div className="fig">
-                  <button>java</button>
+<button type="button">java</button>
                   <img src={java} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
               <div className="box-btn">
                 <div className="fig">
-                  <button>git</button>
+<button type="button">git</button>
                   <img src={git} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
               </div>
                 <div className="box-btn">
                 <div className="fig">
-                  <button>postgresql</button>
+<button type="button">postgresql</button>
                   <img src={postgresql} style={{ width: '50px', margin: '0 auto' }} alt="" />
                   
                 </div>
                 
               </div> <div className="box-btn">
                 <div className="fig">
-                  <button>docker</button>
+<button type="button">docker</button>
                   <img src={docker} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
                 
