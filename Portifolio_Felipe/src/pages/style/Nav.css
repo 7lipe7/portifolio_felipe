@@ -105,13 +105,13 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 255, 0, 0.66);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.398);
       font-family: cursive;
 }
 
 #Cv-download:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 212, 8, 0.858);
+    box-shadow: 0 6px 20px rgba(212, 8, 8, 0.598);
 }
 
 /* === Mobile Menu Animation === */
