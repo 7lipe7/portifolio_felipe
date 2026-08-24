@@ -27,6 +27,10 @@ import dindin5 from "../assets/img_project/dindin/Captura de tela de 2026-08-04 
 import iphone1 from "../assets/img_project/iphone/Captura de tela de 2026-08-04 11-26-12.png";
 import iphone2 from "../assets/img_project/iphone/Captura de tela de 2026-08-04 11-26-22.png";
 
+import quizz from "../assets/img_project/quizz/Captura de tela de 2026-08-24 15-28-20.png"
+import quizz1 from "../assets/img_project/quizz/Captura de tela de 2026-08-24 15-30-15.png"
+import quizz2 from "../assets/img_project/quizz/Captura de tela de 2026-08-24 15-28-43.png"
+import quizz3 from "../assets/img_project/quizz/Captura de tela de 2026-08-24 15-28-36.png"
 
 const PROJECTS = [
   {
@@ -44,6 +48,24 @@ const PROJECTS = [
     html_url: "https://7lipe7.github.io/renata_bordados/",
     images: [renata1, renata2, renata3, renata4]
   },
+
+    {
+    name: "dindin",
+    description: "Aplicação web desenvolvida para gerenciamento financeiro pessoal, permitindo aos usuários registrar despesas e receitas, visualizar gráficos de gastos e manter um controle eficiente de suas finanças. O projeto destaca habilidades em desenvolvimento front-end e integração com APIs para armazenamento de dados.",
+    language: "react/html/css/js",
+    html_url: "https://dindin-one.vercel.app/",
+    images: [dindin1, dindin2, dindin3, dindin4, dindin5]
+  },
+
+  {
+    name: "quizz em react",
+    description: "Aplicação de quiz interativo desenvolvida com React, utilizando componentização, Context API e gerenciamento de estado. O projeto possui seleção de categorias, perguntas e alternativas dinâmicas, sistema de pontuação e tela de resultado.",
+    language: "React | JavaScript | Vite | CSS",
+    html_url: "https://quizz-react-psi.vercel.app/",
+    images: [quizz,quizz3,quizz2,quizz1 ]
+
+
+  },
   {
     name: "calc_imc",
     description: "Calculadora de IMC (Índice de Massa Corporal) desenvolvida com HTML, CSS e JavaScript. Permite aos usuários calcular seu IMC com base em altura e peso, fornecendo uma avaliação rápida da saúde corporal.",
@@ -58,13 +80,7 @@ const PROJECTS = [
     html_url: "https://form-multstep.vercel.app/",
     images: [form1, form2, form3]
   },
-  {
-    name: "dindin",
-    description: "Aplicação web desenvolvida para gerenciamento financeiro pessoal, permitindo aos usuários registrar despesas e receitas, visualizar gráficos de gastos e manter um controle eficiente de suas finanças. O projeto destaca habilidades em desenvolvimento front-end e integração com APIs para armazenamento de dados.",
-    language: "react/html/css/js",
-    html_url: "https://dindin-one.vercel.app/",
-    images: [dindin1, dindin2, dindin3, dindin4, dindin5]
-  },
+
   {
     name: "pagina de vendas do iphone 13",
     description: "Página de vendas do iPhone 13 desenvolvida com HTML, CSS e JavaScript. Permite aos usuários explorar os recursos e especificações do dispositivo, além de facilitar o processo de compra.",
@@ -72,6 +88,9 @@ const PROJECTS = [
     html_url: "https://7lipe7.github.io/iphone/",
     images: [iphone1, iphone2]
   }
+
+ 
+  
 ]
 
 
