@@ -103,8 +103,8 @@ function Repos() {
         </h2>
       </div>
       <div className="repos-grid">
-        {PROJECTS.map((project, index) => (
-          <div className="repo-card" key={`project-${index}`}>
+{PROJECTS.map((project) => (
+          <div className="repo-card" key={project.name}>
 <div className="repo-card-header">
               <h3>{project.name}</h3>
               <span className="repo-language">
@@ -114,9 +114,9 @@ function Repos() {
             {project.images && project.images.length > 0 && (
               <div className="repo-gallery">
                 <div className="repo-gallery-track">
-                  {project.images.map((img, i) => (
+{project.images.map((img, i) => (
                     <img
-                      key={i}
+                      key={img}
                       src={img}
                       alt={`${project.name} - imagem ${i + 1}`}
                       className="repo-gallery-img"
@@ -143,8 +143,8 @@ function Repos() {
         ))}
       </div>
     </div>
-  );
-} 1
+);
+}
 
 export default Repos;
 

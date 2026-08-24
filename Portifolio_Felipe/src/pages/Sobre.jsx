@@ -79,15 +79,15 @@ const Sobre = () => {
           desenvolvimento web e aplicações modernas.
         </h4>
         <div className="btn-contact">
-          <button onClick={() => scrollToSection('projetos')}>ver projetos</button>
-          <button onClick={() => scrollToSection('contato')}>entrar em contato</button>
+<button type="button" onClick={() => scrollToSection('projetos')}>ver projetos</button>
+          <button type="button" onClick={() => scrollToSection('contato')}>entrar em contato</button>
         </div>
         <hr />
         <div className="social-info">
           <div className="box">
             <p>LinkedIn</p>
             <a href="https://www.linkedin.com/in/felipe-santana-lopes-76ba77244/" target="_blank" rel="noopener noreferrer">
-              <button className='contact'>
+<button type="button" className='contact'>
                 <img src={linkdin} alt="LinkedIn" />
               </button>
             </a>
@@ -95,7 +95,7 @@ const Sobre = () => {
           <div className="box">
             <p>github</p>
             <a href="https://github.com/7lipe7" target="_blank" rel="noopener noreferrer">
-              <button className='contact'>
+<button type="button" className='contact'>
                 <img src={gitHub} alt="github" />
               </button>
             </a>

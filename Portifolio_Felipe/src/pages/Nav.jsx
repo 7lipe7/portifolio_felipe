@@ -27,7 +27,8 @@ const Nav = () => {
         <nav>
             <div className="top">
                 <h2>felipe</h2>
-                <button 
+<button 
+                    type="button"
                     className={`hamburger ${isMenuOpen ? 'open' : ''}`}
                     onClick={toggleMenu}
                     aria-label="Menu"
@@ -37,13 +38,13 @@ const Nav = () => {
                     <span></span>
                 </button>
                 <div className={`btn-info ${isMenuOpen ? 'show' : ''}`}>
-                    <button onClick={() => handleNavClick('sobre')}>sobre</button>
-                    <button onClick={() => handleNavClick('habilidades')}>habilidades</button>
-                    <button onClick={() => handleNavClick('projetos')}>projetos</button>
-                    <button onClick={() => handleNavClick('contato')}>contato</button>
+<button type="button" onClick={() => handleNavClick('sobre')}>sobre</button>
+                    <button type="button" onClick={() => handleNavClick('habilidades')}>habilidades</button>
+                    <button type="button" onClick={() => handleNavClick('projetos')}>projetos</button>
+                    <button type="button" onClick={() => handleNavClick('contato')}>contato</button>
                 </div>
                 <a href={cvFile} download className={`cv-link ${isMenuOpen ? 'show' : ''}`}>
-                  <button id='Cv-download'><img src={imgDowload} alt="download" style={{width:'18px',height:'18px', marginRight:'5px'}} /> baixar cv</button>
+<button type="button" id='Cv-download'><img src={imgDowload} alt="download" style={{width:'18px',height:'18px', marginRight:'5px'}} /> baixar cv</button>
                 </a>
             </div>
         </nav>
