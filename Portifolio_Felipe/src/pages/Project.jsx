@@ -92,7 +92,7 @@ const PROJECTS = [
   }
   
 ]
-// fix corrigido
+
 
 
 function Repos() {
