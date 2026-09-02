@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './style/Nav.css'
 
 import imgDowload from '../assets/icons8-baixar-32.png'
-import cvFile from '../assets/currículo_Felipe.pdf'
+import cvFile from '../assets/curriculo_Felipe.pdf'
 
 const scrollToSection = (id) => {
   const element = document.getElementById(id)
