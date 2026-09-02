@@ -60,14 +60,6 @@ const PROJECTS = [
     images: [renata1, renata2, renata3, renata4]
   },
 
-    {
-    name: "dindin",
-    description: "Aplicação web desenvolvida para gerenciamento financeiro pessoal, permitindo aos usuários registrar despesas e receitas, visualizar gráficos de gastos e manter um controle eficiente de suas finanças. O projeto destaca habilidades em desenvolvimento front-end e integração com APIs para armazenamento de dados.",
-    language: "react/html/css/js",
-    html_url: "https://dindin-one.vercel.app/",
-    images: [dindin1, dindin2, dindin3, dindin4, dindin5]
-  },
-
   {
     name: "quizz em react",
     description: "Aplicação de quiz interativo desenvolvida com React, utilizando componentização, Context API e gerenciamento de estado. O projeto possui seleção de categorias, perguntas e alternativas dinâmicas, sistema de pontuação e tela de resultado.",
