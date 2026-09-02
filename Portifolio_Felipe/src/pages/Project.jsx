@@ -90,11 +90,9 @@ const PROJECTS = [
     html_url: "https://7lipe7.github.io/iphone/",
     images: [iphone1, iphone2]
   }
-
- 
   
 ]
-
+// fix corrigido
 
 
 function Repos() {
