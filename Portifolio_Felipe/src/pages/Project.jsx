@@ -42,7 +42,7 @@ const PROJECTS = [
     name: "Lari Amigurumi – Sistema Full Stack",
     description: "Aplicação web Full Stack desenvolvida para gerenciamento de produtos, conteúdos e encomendas de uma loja de amigurumis. Inclui painel administrativo com dashboard e visão de estoque, cadastro/edição/listagem de produtos com upload de imagem, produtos em destaque e gerenciamento de encomendas por status. Integração com banco de dados e APIs REST, interface responsiva e aplicação publicada na web. - Lari Amigurumi",
     language: "React/Node.js/Supabase",
-    html_url: "https://lariamigurumi.vercel.app/",
+    html_url: "https://lariamigurumi.com/",
     images: [lari1, lari2, lariAdmDashboard, lariAdmCadastro, lariAdmLista, lari3, lari4]
   },
   {
