@@ -36,6 +36,8 @@ import quizz1 from "../assets/img_project/quizz/Captura de tela de 2026-08-24 15
 import quizz2 from "../assets/img_project/quizz/Captura de tela de 2026-08-24 15-28-43.png"
 import quizz3 from "../assets/img_project/quizz/Captura de tela de 2026-08-24 15-28-36.png"
 
+import Url from "../assets/url.png"
+
 const PROJECTS = [
   {
 
@@ -52,6 +54,15 @@ const PROJECTS = [
     html_url: "https://dindin-one.vercel.app/",
     images: [dindin1, dindin2, dindin3, dindin4, dindin5]
   },
+  {
+    name: "URL Shortener",
+    description: "  O sistema recebe uma URL longa , gera um código único e a disponibiliza como um link curto que redireciona",
+    language: "docker/Node.js/Supabase",
+    html_url: "https://url-shortener-brown.vercel.app/",
+    images: [Url]
+  }
+  
+  ,
   {
     name: "Renata Bordados",
     description: "Projeto voltado para divulgação de trabalhos de bordado artesanal, com layout elegante e responsivo. Desenvolvido com foco em experiência do usuário, permitindo apresentar produtos de forma clara e profissional.",
