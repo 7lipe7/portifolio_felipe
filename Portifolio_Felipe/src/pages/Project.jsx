@@ -56,12 +56,12 @@ const PROJECTS = [
   },
   {
     name: "URL Shortener",
-    description: "  O sistema recebe uma URL longa , gera um código único e a disponibiliza como um link curto que redireciona",
+    description: "API REST para encurtamento de URLs, construída com foco em backend, boas práticas e arquitetura escalável.O sistema recebe uma URL longa, gera um código único e a disponibiliza como um link curto que redireciona (HTTP 302) para o endereço original, contabilizando os acessos.",
     language: "docker/Node.js/Supabase",
     html_url: "https://url-shortener-brown.vercel.app/",
     images: [Url]
   }
-  
+
   ,
   {
     name: "Renata Bordados",
@@ -76,7 +76,7 @@ const PROJECTS = [
     description: "Aplicação de quiz interativo desenvolvida com React, utilizando componentização, Context API e gerenciamento de estado. O projeto possui seleção de categorias, perguntas e alternativas dinâmicas, sistema de pontuação e tela de resultado.",
     language: "React | JavaScript | Vite | CSS",
     html_url: "https://quizz-react-psi.vercel.app/",
-    images: [quizz,quizz3,quizz2,quizz1 ]
+    images: [quizz, quizz3, quizz2, quizz1]
 
 
   },
@@ -101,7 +101,7 @@ const PROJECTS = [
     html_url: "https://7lipe7.github.io/iphone/",
     images: [iphone1, iphone2]
   }
-  
+
 ]
 
 
@@ -115,9 +115,9 @@ function Repos() {
         </h2>
       </div>
       <div className="repos-grid">
-{PROJECTS.map((project) => (
+        {PROJECTS.map((project) => (
           <div className="repo-card" key={project.name}>
-<div className="repo-card-header">
+            <div className="repo-card-header">
               <h3>{project.name}</h3>
               <span className="repo-language">
                 {project.language || "N/A"}
@@ -126,7 +126,7 @@ function Repos() {
             {project.images && project.images.length > 0 && (
               <div className="repo-gallery">
                 <div className="repo-gallery-track">
-{project.images.map((img, i) => (
+                  {project.images.map((img, i) => (
                     <img
                       key={img}
                       src={img}
@@ -155,7 +155,7 @@ function Repos() {
         ))}
       </div>
     </div>
-);
+  );
 }
 
 export default Repos;
