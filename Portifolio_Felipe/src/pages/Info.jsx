@@ -9,6 +9,7 @@ import py from '../assets/icons8-python-96.png'
 import prisma from '../assets/icons8-prisma-orma-96.png'
 import java from '../assets/icons8-logo-java-coffee-cup-96.png'
 import js from '../assets/icons8-javascript-96.png'
+import Ts from '../assets/Typescript_logo_2020.svg.webp'
 import git from '../assets/icons8-git-96.png'
 import postgresql from '../assets/icons8-postgreesql-96.png'
 import docker from '../assets/docker.png'
@@ -60,8 +61,16 @@ const Info = () => {
                   <button type="button">javaScript</button>
                   <img src={js} style={{ width: '50px', margin: '0 auto' }} alt="" />
                 </div>
-
               </div>
+
+              <div className="box-btn">
+                <div className="fig">
+                  <button type="button">typeScript</button>
+                  <img src={Ts} style={{ width: '50px', margin: '0 auto' }} alt="" />
+                </div>
+              </div>
+
+
 
               <div className="box-btn">
                 <div className="fig">
