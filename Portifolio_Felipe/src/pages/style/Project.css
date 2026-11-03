@@ -31,6 +31,33 @@
     padding: 0 20px;
 }
 
+.projects-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin: 32px auto 0;
+}
+
+.projects-toggle {
+    color: white;
+    background: linear-gradient(orange);
+    border: 1px solid orange;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(255, 165, 0, 0.3);
+}
+
+.projects-toggle:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
 
 .repo-card {
     background: #111;

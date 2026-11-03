@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import "./style/Project.css";
 
 import lari1 from "../assets/img_project/lari/Captura de tela de 2026-08-04 11-16-39.png";
@@ -104,9 +105,19 @@ const PROJECTS = [
 
 ]
 
+const FEATURED_PROJECT_NAMES = new Set([
+  "Lari Amigurumi – Sistema Full Stack",
+  "DinDin – Gestão Financeira",
+  "Renata Bordados"
+]);
 
 
 function Repos() {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  const visibleProjects = showAllProjects
+    ? PROJECTS
+    : PROJECTS.filter((project) => FEATURED_PROJECT_NAMES.has(project.name));
+
   return (
     <div className="project-container" id="projetos">
       <div className="title">
@@ -114,8 +125,8 @@ function Repos() {
           Meus <span>Projetos </span>
         </h2>
       </div>
-      <div className="repos-grid">
-        {PROJECTS.map((project) => (
+      <div className="repos-grid" id="repos-grid">
+        {visibleProjects.map((project) => (
           <div className="repo-card" key={project.name}>
             <div className="repo-card-header">
               <h3>{project.name}</h3>
@@ -154,9 +165,19 @@ function Repos() {
           </div>
         ))}
       </div>
+      <div className="projects-toggle-container">
+        <button
+          type="button"
+          className="projects-toggle"
+          aria-expanded={showAllProjects}
+          aria-controls="repos-grid"
+          onClick={() => setShowAllProjects((isShowingAll) => !isShowingAll)}
+        >
+          {showAllProjects ? "Ver menos projetos" : "Ver mais projetos"}
+        </button>
+      </div>
     </div>
   );
 }
 
 export default Repos;
-
