@@ -57,7 +57,7 @@ const PROJECTS = [
     html_url: "https://lariamigurumi.com",
     images: [lari1, lari2, lariAdmDashboard, lariAdmCadastro, lariAdmLista, lari3, lari4]
   },
-  {
+{
     name: "Amora Banho e Tosa",
     description: "Sistema web para gerenciamento de pet shop, permitindo administrar clientes, pets, serviços e agendamentos. Desenvolvido com foco em organização, segurança e facilidade de uso.",
     language: "PHP / MySQL / Bootstrap / Docker",
@@ -180,7 +180,7 @@ function Repos() {
                   project.html_url.includes("vercel.app") ||
                   project.html_url.includes("onrender.com") ||
                   project.html_url.includes("lariamigurumi.com")
-                  
+
                   ? "Acessar Site"
                   : "Ver no GitHub"}
               </a>
