@@ -180,6 +180,7 @@ function Repos() {
                   project.html_url.includes("vercel.app") ||
                   project.html_url.includes("onrender.com") ||
                   project.html_url.includes("lariamigurumi.com")
+                  
                   ? "Acessar Site"
                   : "Ver no GitHub"}
               </a>
