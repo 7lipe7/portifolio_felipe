@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import "./style/Project.css";
+import Lightbox from "../components/Lightbox";
 
 import lari1 from "../assets/img_project/lari/Captura de tela de 2026-08-04 11-16-39.png";
 import lari2 from "../assets/img_project/lari/Captura de tela de 2026-08-04 11-16-53.png";
@@ -94,8 +95,6 @@ const PROJECTS = [
     language: "React | JavaScript | Vite | CSS",
     html_url: "https://quizz-react-psi.vercel.app/",
     images: [quizz, quizz3, quizz2, quizz1]
-
-
   },
   {
     name: "Calc IMC",
@@ -131,6 +130,29 @@ const FEATURED_PROJECT_NAMES = new Set([
 
 function Repos() {
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const [lightbox, setLightbox] = useState(null); // null = fechado | { images, index } = aberto
+
+  const openLightbox = (images, index) => setLightbox({ images, index });
+  const closeLightbox = () => setLightbox(null);
+  const goPrev = () =>
+    setLightbox((prev) =>
+      prev
+        ? {
+            ...prev,
+            index: (prev.index - 1 + prev.images.length) % prev.images.length,
+          }
+        : null
+    );
+  const goNext = () =>
+    setLightbox((prev) =>
+      prev
+        ? {
+            ...prev,
+            index: (prev.index + 1) % prev.images.length,
+          }
+        : null
+    );
+
   const visibleProjects = showAllProjects
     ? PROJECTS
     : PROJECTS.filter((project) => FEATURED_PROJECT_NAMES.has(project.name));
@@ -161,6 +183,7 @@ function Repos() {
                       alt={`${project.name} - imagem ${i + 1}`}
                       className="repo-gallery-img"
                       loading="lazy"
+                      onClick={() => openLightbox(project.images, i)}
                     />
                   ))}
                 </div>
@@ -199,6 +222,17 @@ function Repos() {
           {showAllProjects ? "Ver menos projetos" : "Ver mais projetos"}
         </button>
       </div>
+
+      {lightbox && (
+        <Lightbox
+          isOpen
+          images={lightbox.images}
+          currentIndex={lightbox.index}
+          onClose={closeLightbox}
+          onPrev={goPrev}
+          onNext={goNext}
+        />
+      )}
     </div>
   );
 }
