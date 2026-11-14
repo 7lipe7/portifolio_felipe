@@ -133,14 +133,14 @@ const Info = () => {
           <div className="text">
             <h2>Quem sou eu</h2>
             <p>
-              Desenvolvedor com experiência na criação de aplicações web completas, desde interfaces modernas em React até APIs robustas com Node.js e PHP.
+Desenvolvedor Web em formação, com experiência prática no desenvolvimento de aplicações full stack, utilizando React para construção de interfaces e Node.js e PHP no desenvolvimento de APIs e funcionalidades de back-end.
             </p>
             <p>
-              Já desenvolvi projetos com autenticação, integração com APIs e gerenciamento de dados, sempre focando em performance, organização e escalabilidade.
+              Ao longo dos meus projetos, desenvolvi funcionalidades como autenticação de usuários, integração com APIs REST e gerenciamento de dados, buscando soluções seguras, eficientes e bem estruturadas.
             </p>
 
             <p>
-              Tenho experiência com bancos de dados como MySQL e ferramentas modernas como Prisma e Supabase.
+              Tenho experiência com bancos de dados relacionais, como MySQL e PostgreSQL, além de ferramentas como Prisma e Supabase. Estou constantemente aprimorando minhas habilidades e aplicando boas práticas de desenvolvimento para construir aplicações organizadas, escaláveis e de fácil manutenção.
             </p>
 
 
